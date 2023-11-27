@@ -253,8 +253,8 @@ document
     frame.setAttribute("class", "iframething");
     frame.setAttribute("style", "display:none");
     frame.setAttribute("id", uwu);
-    frame.setAttribute("onload", `setinfo(${uwu})`);
-    opencity(uwu);
+    frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+    // opencity(uwu);
   });
 
 function OpenTab(url, name) {
@@ -276,8 +276,8 @@ function OpenTab(url, name) {
   frame.setAttribute("class", "iframething");
   frame.setAttribute("style", "display:none");
   frame.setAttribute("id", uwu);
-  frame.setAttribute("onload", `setinfo(${uwu})`);
-  opencity(uwu);
+  frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+    // opencity(uwu);
 }
 
 function WebU() {
@@ -300,8 +300,8 @@ function WebU() {
   frame.setAttribute("class", "iframething");
   frame.setAttribute("style", "display:none");
   frame.setAttribute("id", uwu);
-  frame.setAttribute("onload", `setinfo(${uwu})`);
-  opencity(uwu);
+  frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+    // opencity(uwu);
 }
 
 document.querySelector("#urlbar").addEventListener("keyup", (event) => {
