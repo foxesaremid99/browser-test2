@@ -1,0 +1,44 @@
+Uri: https://titaniumnetwork.org/
+File Name: D:\titaniumnetwork.org\index.htm
+Content Type: text/html
+
+Uri: https://titaniumnetwork.org/css/demo.css
+File Name: D:\titaniumnetwork.org\css\demo.css
+Content Type: text/css
+
+Uri: https://titaniumnetwork.org/css/chrome-tabs.css
+File Name: D:\titaniumnetwork.org\css\chrome-tabs.css
+Content Type: text/css
+
+Uri: https://titaniumnetwork.org/css/chrome-tabs-dark-theme.css
+File Name: D:\titaniumnetwork.org\css\chrome-tabs-dark-theme.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: D:\titaniumnetwork.org\icon.css
+Content Type: text/css
+
+Uri: https://titaniumnetwork.org/manifest.json
+File Name: D:\titaniumnetwork.org\manifest.json
+Content Type: application/json
+
+Uri: https://arc.io/widget.min.js
+File Name: D:\titaniumnetwork.org\widget.min.js
+Content Type: application/javascript
+
+Uri: https://titaniumnetwork.org/js/draggabilly.pkgd.min.js
+File Name: D:\titaniumnetwork.org\js\draggabilly.pkgd.min.js
+Content Type: application/javascript
+
+Uri: https://titaniumnetwork.org/js/chrome-tabs.js
+File Name: D:\titaniumnetwork.org\js\chrome-tabs.js
+Content Type: application/javascript
+
+Uri: https://titaniumnetwork.org/js/js.js
+File Name: D:\titaniumnetwork.org\js\js.js
+Content Type: application/javascript
+
+Uri: https://fonts.gstatic.com/s/materialicons/v113/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+File Name: D:\titaniumnetwork.org\s\materialicons\v113\flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+Content Type: font/ttf
+

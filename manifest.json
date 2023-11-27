@@ -1,0 +1,16 @@
+{
+    "short_name": "HT",
+    "name": "HyperTabs",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#252729",
+    "display": "standalone",
+    "categories": ["books", "education"],
+    "theme_color": "#252729"
+}
