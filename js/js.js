@@ -213,6 +213,7 @@ function opencity(a) {
       let b64Url = decodeUrl(regUrl);
       if (getActiveFrameId() === +a) {
         document.getElementById("urlbar").value = b64Url;
+        document.getElementById("urlbar").value = document.getElementById(a).contentWindow.location.href;
       }
       break;
   }
