@@ -243,7 +243,7 @@ document
     document.getElementById("urlbar").value = "";
     var uwu = i++;
     var frame = document.createElement("IFRAME");
-    frame.setAttribute("src", "/page.html");
+    frame.setAttribute("src", "https://foxesaremid99.github.io/browser-test2/page.html");
     frame.setAttribute("allow", "fullscreen");
     frame.setAttribute(
       "sandbox",
