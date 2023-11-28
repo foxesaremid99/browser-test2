@@ -257,7 +257,7 @@ document
     frame.onload = function() {
       document.getElementById("urlbar").value = frame.contentWindow.location.href;
     };
-    // opencity(uwu);
+    opencity(uwu);
   });
 
 function OpenTab(url, name) {
@@ -283,7 +283,7 @@ function OpenTab(url, name) {
   frame.onload = function() {
     document.getElementById("urlbar").value = frame.contentWindow.location.href;
   };
-    // opencity(uwu);
+  opencity(uwu);
 }
 
 function WebU() {
@@ -310,7 +310,7 @@ function WebU() {
   frame.onload = function() {
     document.getElementById("urlbar").value = frame.contentWindow.location.href;
   };
-    // opencity(uwu);
+  opencity(uwu);
 }
 
 document.querySelector("#urlbar").addEventListener("keyup", (event) => {
