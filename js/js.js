@@ -243,7 +243,7 @@ document
     document.getElementById("urlbar").value = "";
     var uwu = i++;
     var frame = document.createElement("IFRAME");
-    frame.setAttribute("src", "https://foxesaremid99.github.io/browser-test2/page.html");
+    frame.setAttribute("src", "");
     frame.setAttribute("allow", "fullscreen");
     frame.setAttribute(
       "sandbox",
@@ -253,7 +253,10 @@ document
     frame.setAttribute("class", "iframething");
     frame.setAttribute("style", "display:none");
     frame.setAttribute("id", uwu);
-    frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+    frame.setAttribute("onload", `setinfo(${uwu});`);
+    frame.onload = function() {
+      document.getElementById("urlbar").value = frame.contentWindow.location.href;
+    };
     // opencity(uwu);
   });
 
@@ -276,7 +279,10 @@ function OpenTab(url, name) {
   frame.setAttribute("class", "iframething");
   frame.setAttribute("style", "display:none");
   frame.setAttribute("id", uwu);
-  frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+  frame.setAttribute("onload", `setinfo(${uwu});`);
+  frame.onload = function() {
+    document.getElementById("urlbar").value = frame.contentWindow.location.href;
+  };
     // opencity(uwu);
 }
 
@@ -300,7 +306,10 @@ function WebU() {
   frame.setAttribute("class", "iframething");
   frame.setAttribute("style", "display:none");
   frame.setAttribute("id", uwu);
-  frame.setAttribute("onload", `setinfo(${uwu}); document.getElementById("urlbar").value = frame.contentWindow.location.href;`);
+  frame.setAttribute("onload", `setinfo(${uwu});`);
+  frame.onload = function() {
+    document.getElementById("urlbar").value = frame.contentWindow.location.href;
+  };
     // opencity(uwu);
 }
 
