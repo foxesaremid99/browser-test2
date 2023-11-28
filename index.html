@@ -129,18 +129,6 @@
             id="refreshbtn"
             onclick="document.getElementById(getActiveFrameId()).contentWindow.location = "";"
           >
-          <script>
-            alert("tezt");
-            document.getElementById(getActiveFrameId()).onload = function() { 
-              alert("new");
-              try {
-                var curScr = this.contentWindow.location.href;
-              } catch(e) {
-                alert("new site");
-                document.getElementById(urlbar). = this.contentWindow.location.href;
-              }
-            };
-          </script>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
