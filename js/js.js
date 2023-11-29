@@ -62,7 +62,7 @@ function getBookmark() {
     return "/favicon.ico";
   }
 }
-let searchengine = "www.bing";
+let searchengine = 'www.bing';
 function searchEngine(a) {
   searchengine = a;
 }
