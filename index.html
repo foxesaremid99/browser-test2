@@ -146,7 +146,7 @@
           <button
             style="position: absolute; right: 0;"
             id="options"
-            onclick='openMenu("optionsdrop", "themedrop", "extensiondrop", "uadrop", "customtheme");'
+            onclick='openMenu("optionsdrop", "sedrop", "themedrop", "extensiondrop", "uadrop", "customtheme");'
           >
           &#x22ee;
           </button>
@@ -157,6 +157,9 @@
         <div id="optionsdrop" class="dropdown-content">
           <a class="pointer" onclick='toggleId("optionsdrop", "uadrop");'
             >Set Useragent</a
+          >
+          <a class="pointer" onclick='toggleId("optionsdrop", "sedrop");'
+            >Change Search Engine</a
           >
           <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'
             >Inspect Element</a
@@ -183,7 +186,7 @@
           >
         </div>
         <div id="uadrop" class="dropdown-content">
-          <a class="pointer" onclick='toggleId("uadrop", "optiondrop");'
+          <a class="pointer" onclick='toggleId("uadrop", "optionsdrop");'
             >back</a
           >
           <a>Set The Useragent (currently not working)</a>
@@ -194,6 +197,13 @@
             onclick='document.cookie=`alloyua=${localStorage.getItem("ua")}`; toggleId("uadrop");'
             >Apply</a
           >
+        </div>
+        <div id="sedrop" class="dropdown-content">
+          <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop")'
+            >back</a
+          >
+          <a onclick='searchEngine("Bing")'>Bing</a>
+          <a onclick='searchEngine("Google")'>Google (needs proxy)</a>
         </div>
         <div id="themedrop" class="dropdown-content">
           <a onclick='toggleId("themedrop", "optionsdrop");'>back</a>
