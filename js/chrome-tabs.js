@@ -276,11 +276,11 @@
 
     updateTab(tabEl, tabProperties) {
       tabEl.querySelector(".chrome-tab-title").textContent =
-        tab.frame.contentDocument.title; //tabProperties.title;
+        tabProperties.title;
 
       const faviconEl = tabEl.querySelector(".chrome-tab-favicon");
       if (tabProperties.favicon) {
-        faviconEl.style.backgroundImage =  `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${tab.frame.contentWindow.location.href}&size=20`//  `url('${tabProperties.favicon}')`;
+        faviconEl.style.backgroundImage =  `url('${tabProperties.favicon}')`;
         faviconEl.removeAttribute("hidden", "");
       } else {
         faviconEl.setAttribute("hidden", "");
