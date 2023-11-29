@@ -158,6 +158,17 @@ function back() {
   //document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId());
   document.getElementById(getActiveFrameId()).contentWindow.history.back();
 }
+
+document.getElementById("backbtn").addEventListener('click', function () {
+    const iframe = document.getElementById(getActiveFrameId())
+    iframe.contentWindow.history.back();
+});
+
+document.getElementById("forwardbtn").addEventListener('click', function () {
+    const iframe = document.getElementById(getActiveFrameId());
+    iframe.contentWindow.history.forward();
+});
+
 function showId(...x) {
   x.forEach((a) => {
     document.getElementById(a).style.display = "block";
