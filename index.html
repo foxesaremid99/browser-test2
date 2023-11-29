@@ -63,7 +63,7 @@
           </style>
         </div>
         <button data-add-tab="" id="createTab">
-          New Tab
+          New Tab.
         </button>
         <div id="B"></div>
         <style>
@@ -202,10 +202,10 @@
           <a class="pointer" onclick='toggleId("sedrop", "optionsdrop")'
             >back</a
           >
-          <a onclick='searchEngine("www.bing")'>Bing</a>
-          <a onclick='searchEngine("www.google")'>Google (needs proxy)</a>
-          <a onclick='searchEngine("search.brave")'>Brave</a>
-          <a onclick='searchEngine("www.yahoo")'>Yahoo</a>
+          <a onclick='localStorage.setItem("searchengine", 'www.bing');'>Bing</a>
+          <a onclick='localStorage.setItem("searchengine", "www.google")'>Google (needs proxy)</a>
+          <a onclick='localStorage.setItem("searchengine", "search.brave")'>Brave</a>
+          <a onclick='localStorage.setItem("searchengine", "www.yahoo")'>Yahoo</a>
         </div>
         <div id="themedrop" class="dropdown-content">
           <a onclick='toggleId("themedrop", "optionsdrop");'>back</a>
