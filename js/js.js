@@ -103,7 +103,7 @@ function action(a) {
     alert("Please insert a URL");
   } else if (!value.value.includes("http")) {
     if (!isUrl(value.value)) {
-      value.value = "https://" + localStorage.getItem("searchengine"); + ".com/search?q=" + value.value;
+      value.value = "https://" + localStorage.getItem("searchengine") + ".com/search?q=" + value.value;
     } else {
       value.value = "https://" + value.value;
     }
@@ -310,7 +310,7 @@ function WebU() {
   document.getElementById("urlbar").value = "";
   var uwu = i++;
   var frame = document.createElement("IFRAME");
-  frame.setAttribute("src", "https://" + localStorage.getItem("searchengine"); + ".com");
+  frame.setAttribute("src", "https://" + localStorage.getItem("searchengine") + ".com");
   frame.setAttribute("allow", "fullscreen");
   frame.setAttribute(
     "sandbox",
