@@ -271,7 +271,10 @@ document
     frame.setAttribute("onload", `setinfo(${uwu});`);
     frame.onload = function() {
       document.getElementById("urlbar").value = frame.contentWindow.location.href;
-      tab.updateTab()
+    chrometabs.updateTab(tab, {
+      Title: frame.contentDocument.title,
+      Favicon: `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${frame.contentWindow.location.href}&size=20`
+    })
     };
     opencity(uwu);
   });
