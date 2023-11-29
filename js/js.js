@@ -149,25 +149,26 @@ function refresh() {
   ).contentWindow.location;
 }
 function forward() {
-  //document.getElementById(getActiveFrameId()).src = getForward(
-  //  getActiveFrameId()
-  //);
+  document.getElementById(getActiveFrameId()).src = getForward(
+    getActiveFrameId()
+  );
   document.getElementById(getActiveFrameId()).contentWindow.history.forward();
 }
 function back() {
-  //document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId());
+  document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId());
   document.getElementById(getActiveFrameId()).contentWindow.history.back();
 }
 
 document.getElementById("backbtn").addEventListener('click', function () {
     const iframe = document.querySelector(`#${getActiveFrameId()} iframe`);
     iframe.contentWindow.history.back();
+  back();
 });
 
 document.getElementById("forwardbtn").addEventListener('click', function () {
-    alert("a")
     const iframe = document.querySelector(`#${getActiveFrameId()} iframe`);
     iframe.contentWindow.history.forward();
+  forward();
 });
 
 function showId(...x) {
