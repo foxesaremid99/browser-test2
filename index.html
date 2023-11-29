@@ -173,6 +173,9 @@
           <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop");'
             >Extensions</a
           >
+          <a class="pointer" onclick='toggleId("optiondrop");'
+            >Close</a
+          >
         </div>
         <div id="optiondrop" class="dropdown-content">
           <a class="pointer" onclick='toggleId("optiondrop", "optionsdrop");'
@@ -202,10 +205,10 @@
           <a class="pointer" onclick='toggleId("sedrop", "optionsdrop")'
             >back</a
           >
-          <a onclick='localStorage.setItem("searchengine", "www.bing");'>Bing</a>
-          <a onclick='localStorage.setItem("searchengine", "www.google")'>Google (needs proxy)</a>
-          <a onclick='localStorage.setItem("searchengine", "search.brave")'>Brave</a>
-          <a onclick='localStorage.setItem("searchengine", "www.yahoo")'>Yahoo</a>
+          <a onclick='localStorage.setItem("searchengine", "www.bing"); toggleId("sedrop");'>Bing</a>
+          <a onclick='localStorage.setItem("searchengine", "www.google"); toggleId("sedrop");'>Google (needs proxy)</a>
+          <a onclick='localStorage.setItem("searchengine", "search.brave"); toggleId("sedrop");'>Brave</a>
+          <a onclick='localStorage.setItem("searchengine", "www.yahoo"); toggleId("sedrop");'>Yahoo</a>
         </div>
         <div id="themedrop" class="dropdown-content">
           <a onclick='toggleId("themedrop", "optionsdrop");'>back</a>
