@@ -160,12 +160,13 @@ function back() {
 }
 
 document.getElementById("backbtn").addEventListener('click', function () {
-    const iframe = document.getElementById(getActiveFrameId())
+    const iframe = document.querySelector(`#${getActiveFrameId()} iframe`);
     iframe.contentWindow.history.back();
 });
 
 document.getElementById("forwardbtn").addEventListener('click', function () {
-    const iframe = document.getElementById(getActiveFrameId());
+    alert("a")
+    const iframe = document.querySelector(`#${getActiveFrameId()} iframe`);
     iframe.contentWindow.history.forward();
 });
 
