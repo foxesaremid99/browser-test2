@@ -63,7 +63,7 @@
           </style>
         </div>
         <button data-add-tab="" id="createTab">
-          +
+          New Tab
         </button>
         <div id="B"></div>
         <style>
@@ -92,7 +92,7 @@
         <div class="mock-browser-content">
           <button
             id="backbtn"
-            onclick="back();"
+            onclick="document.getElementById(getActiveFrameId()).contentWindow.history.back(); alert('back?');"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@
           </button>
           <button
             id="forwardbtn"
-            onclick="forward();"
+            onclick="document.getElementById(getActiveFrameId()).contentWindow.history.forward(); alert('forward?');"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
