@@ -62,7 +62,7 @@ function getBookmark() {
     return "/favicon.ico";
   }
 }
-var searchengine = "bing"
+var searchengine = "www.bing"
 function(a) {
   searchengine = a
 }
@@ -107,7 +107,7 @@ function action(a) {
     alert("Please insert a URL");
   } else if (!value.value.includes("http")) {
     if (!isUrl(value.value)) {
-      value.value = "https://www."searchengine".com/search?q=" + value.value;
+      value.value = "https://"searchengine".com/search?q=" + value.value;
     } else {
       value.value = "https://" + value.value;
     }
