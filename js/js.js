@@ -149,12 +149,14 @@ function refresh() {
   ).contentWindow.location;
 }
 function forward() {
-  document.getElementById(getActiveFrameId()).src = getForward(
-    getActiveFrameId()
-  );
+  //document.getElementById(getActiveFrameId()).src = getForward(
+  //  getActiveFrameId()
+  //);
+  document.getElementById(getActiveFrameId()).contentWindow.history.forward();
 }
 function back() {
-  document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId());
+  //document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId());
+  document.getElementById(getActiveFrameId()).contentWindow.history.back();
 }
 function showId(...x) {
   x.forEach((a) => {
