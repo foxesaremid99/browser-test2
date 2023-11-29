@@ -62,6 +62,10 @@ function getBookmark() {
     return "/favicon.ico";
   }
 }
+var searchengine = "bing"
+function(a) {
+  searchengine = a
+}
 function setinfo(aa) {
   document.getElementsByClassName(
     aa
@@ -103,7 +107,7 @@ function action(a) {
     alert("Please insert a URL");
   } else if (!value.value.includes("http")) {
     if (!isUrl(value.value)) {
-      value.value = "https://www.bing.com/search?q=" + value.value;
+      value.value = "https://www."searchengine".com/search?q=" + value.value;
     } else {
       value.value = "https://" + value.value;
     }
@@ -310,7 +314,7 @@ function WebU() {
   document.getElementById("urlbar").value = "";
   var uwu = i++;
   var frame = document.createElement("IFRAME");
-  frame.setAttribute("src", "https://bing.com");
+  frame.setAttribute("src", "https://"searchengine".com");
   frame.setAttribute("allow", "fullscreen");
   frame.setAttribute(
     "sandbox",
