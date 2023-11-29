@@ -63,7 +63,7 @@ function getBookmark() {
   }
 }
 var searchengine = "www.bing"
-function(a) {
+function searchEngine(a) {
   searchengine = a
 }
 function setinfo(aa) {
