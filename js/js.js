@@ -62,9 +62,6 @@ function getBookmark() {
     return "/favicon.ico";
   }
 }
-function searchEngine(a) {
-  localStorage.setItem("searchengine", a);
-}
 function setinfo(aa) {
   document.getElementsByClassName(
     aa
