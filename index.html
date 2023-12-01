@@ -63,7 +63,7 @@
           </style>
         </div>
         <button data-add-tab="" id="createTab">
-          NewTab
+          New Tab
         </button>
         <div id="B"></div>
         <style>
@@ -261,7 +261,12 @@
           <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop")'
             >back</a
           >
-          <a>Coming very soon?</a>
+          <a class="pointer" href='javascript:(function()%7Bfunction%20killads()%20%7B%20%20if%20(document.getElementById(getActiveFrameId()).getElementsByClassName(%22video-ads%22)%5B0%5D.innerHTML%20!%3D%3D%20%22%22)%20%7B%20%20%20%20var%20banner%20%3D%20false%3B%20%20%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20document.getElementById(getActiveFrameId()).getElementsByClassName(%22ytp-ad-overlay-close-button%22).length%3B%20i%2B%2B)%20%7B%0A%20%20document.getElementById(getActiveFrameId()).document.getElementsByClassName(%22ytp-ad-overlay-close-button%22)%5Bi%5D.click()%3B%0A%20%20banner%20%3D%20true%3B%0A%7D%0Aif%20(banner%20%3D%3D%3D%20false)%20%7B%0A%20%20document.getElementById(getActiveFrameId()).getElementsByClassName(%22html5-main-video%22)%5B0%5D.currentTime%20%3D%20document.getElementById(getActiveFrameId()).getElementsByClassName(%22html5-main-video%22)%5B0%5D.duration%3B%20%20%20%20%20%20document.getElementById(getActiveFrameId()).getElementsByClassName(%22ytp-ad-skip-button%22)%5B0%5D.click()%3B%0A%7D%0A%20%20%7D%0A%20%20%20%20%7D%0AsetInterval(killads()%2C%2060000)%3B%7D)()%3B'
+            >YT Ad Skipper</a
+          >
+          <a class="pointer" href='javascript:(function()%7Bjavascript%3A%20var%20DELAY%20%3D%201%3B%0A%20%20%20%20%20%20var%20autoClickerStyleElement%20%3D%20document.getElementById(getActiveFrameId()).createElement(%22style%22)%3B%0A%20%20%20%20%20%20autoClickerStyleElement.innerHTML%20%3D%20%22*%7Bcursor%3A%20crosshair%20!important%3B%7D%22%3B%0A%20%20%20%20%20%20document.getElementById(getActiveFrameId()).body.appendChild(autoClickerStyleElement)%3B%0A%0A%20%20%20%20%20%20function%20addClicker(e)%20%7B%0A%20%20%20%20%20%20%20%20if%20(!e.isTrusted)%20%7B%0A%20%20%20%20%20%20%20%20%20%20return%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20if%20(e.target.classList.contains(%22auto-clicker-target%22))%20%7B%0A%20%20%20%20%20%20%20%20%20%20e.target.classList.remove(%22auto-clicker-target%22)%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20e.target.classList.add(%22auter-target%22)%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20document.getElementById(getActiveFrameId()).body.removeChild(autoClickerStyleElement)%3B%0A%20%20%20%20%20%20%20%20document.getElementById(getActiveFrameId()).body.removeEventListener(%22click%22%2C%20addClicker)%3B%0A%20%20%20%20%20%20%20%20e.preventDefault()%3B%0A%20%20%20%20%20%20%20%20autoClick(e.target)%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20function%20autoClick(element)%20%7B%0A%20%20%20%20%20%20%20%20if%20(element.classList.contains(%22auto-clicker-target%22))%20%7B%0A%20%20%20%20%20%20%20%20%20%20element.click()%3B%0A%20%20%20%20%20%20%20%20%20%20setTimeout(function()%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20autoClick(element)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20console.Clear()%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%20DELAY)%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20document.getElementById(getActiveFrameId()).body.addEventListener(%22click%22%2C%20addClicker%2C%200)%3B%7D)()%3B'
+            >Auto Clicker</a
+          >
         </div>
       </div>
       <script src="js/draggabilly.pkgd.min.js"></script>
