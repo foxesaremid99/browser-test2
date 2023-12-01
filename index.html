@@ -176,9 +176,6 @@
           <a class="pointer" onclick='AB()'
             >about:blank Cloak</a
           >
-          <a class="pointer" onclick='AB()'
-            >Open Proxy Version</a
-          >
           <a class="pointer" onclick='let inFrame;
 try {
     inFrame = window !== top;
@@ -208,6 +205,9 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         doc.body.appendChild(iframe);
     }
 }'
+            >Open Proxy Version</a
+          >
+          <a class="pointer" onclick='toggleId("optiondrop"'
             >Close</a
           >
         </div>
