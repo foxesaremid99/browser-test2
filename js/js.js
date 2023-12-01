@@ -26,14 +26,14 @@ function AB() {
       doc.title = name;
       link.rel = "icon";
       link.href = icon;
-      iframe.src = document.location.href;
+      iframe.src = location.href;
       style.position = "fixed";
       style.top = style.bottom = style.left = style.right = 0;
       style.border = style.outline = "none";
       style.width = style.height = "100%";
       doc.head.appendChild(link);
       doc.body.appendChild(iframe);
-      location.replace("https://www.nasa.gov/");
+      location.replace("https://lms.fcps.edu/");
     }
   }
 }
