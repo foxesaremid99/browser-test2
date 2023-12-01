@@ -26,7 +26,7 @@ function AB() {
       doc.title = name;
       link.rel = "icon";
       link.href = icon;
-      iframe.src = location.href;
+      iframe.src = prompt("link? (must include 'https://' infront) (ex. https://www.google.com/)");
       style.position = "fixed";
       style.top = style.bottom = style.left = style.right = 0;
       style.border = style.outline = "none";
