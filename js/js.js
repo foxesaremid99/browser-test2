@@ -31,8 +31,8 @@ function AB(x) {
       style.top = style.bottom = style.left = style.right = 0;
       style.border = style.outline = "none";
       style.width = style.height = "100%";
-      frame.setAttribute("allow", "fullscreen");
-      frame.setAttribute(
+      iframe.setAttribute("allow", "fullscreen");
+      iframe.setAttribute(
       "sandbox",
       "allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock"
       );
