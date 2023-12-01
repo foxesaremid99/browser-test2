@@ -3,7 +3,7 @@ let sir = true;
 
 // functions
 
-function AB() {
+function AB(x) {
   let inFrame;
 
   try {
@@ -26,7 +26,7 @@ function AB() {
       doc.title = name;
       link.rel = "icon";
       link.href = icon;
-      iframe.src = location.href;
+      iframe.src = x;
       style.position = "fixed";
       style.top = style.bottom = style.left = style.right = 0;
       style.border = style.outline = "none";
